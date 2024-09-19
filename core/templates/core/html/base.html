@@ -15,11 +15,13 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
     </head>
 
     <body>
+     {% include "core/html/login.html" %}
      <div class="container-fluid">
-       {% include "core/templates/login.html" %}
+       {% include "core/html/login.html" %}
      </div>
 
 

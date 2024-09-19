@@ -1,0 +1,41 @@
+  /* Estilos personalizados para el sidebar */
+  .sidebar {
+    height: 100vh;
+    background-color: #343a40;
+    padding-top: 20px;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+.sidebar .nav-link {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+.sidebar .nav-link:hover {
+    background-color: #495057;
+    border-radius: 5px;
+}
+.sidebar .active {
+    background-color: #495057;
+    border-radius: 5px;
+}
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        margin-left: -250px;
+    }
+    .sidebar.active {
+        margin-left: 0;
+    }
+    .content {
+        margin-left: 0;
+    }
+    .content.active {
+        margin-left: 250px;
+    }
+}
