@@ -1,5 +1,23 @@
-  /* Estilos personalizados para el sidebar */
-  .sidebar {
+  *{
+    background-color:#d1f3f3 ;
+  }
+
+
+.contenedorPrincipal{
+    background-color: #a5aab8;
+  
+}
+
+
+
+
+.login-box{
+    border-radius: 5%;
+}
+
+
+
+.sidebar {
     height: 100vh;
     background-color: #343a40;
     padding-top: 20px;
