@@ -1,21 +1,59 @@
-{% include "core/html/data.html" %} 
-{% block content %}
-<div class="d-flex">
+ <!-- Sidebar -->
+ <div class="d-flex">
     <nav class="sidebar flex-column flex-shrink-0 p-3 bg-dark">
         <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-4">Esem</span>
+            <span class="fs-4">ESEM</span>
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="#hero" class="nav-link active">
-                    Inicio
+                <a href="{% url 'home' %}" class="nav-link active">
+                    Home
                 </a>
             </li>
-           
-         
-          
-           
+            <li>
+                <a href="{% url 'home' %}"class="nav-link">
+                   Usuarios
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'home' %}" class="nav-link">
+                  Mensajería
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'home' %}" class="nav-link">
+                   Eventos
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'home' %}" class="nav-link">
+                   Notificaciones
+                </a>
+            </li>
+            <li></li>
+                <a href="{% url 'home' %}" class="nav-link">
+                   Reconocimientos
+                </a>
+            </li>
+            <li></li>
+                <a href="{% url 'home' %}" class="nav-link">
+                   Configuraciones
+                </a>
+            </li>
+             <li></li>
+                <a href="{% url 'home' %}" class="nav-link">
+                   Cerrar Session
+                </a>
+            </li>
         </ul>
     </nav>
-{% endblock %}
+</div>
+
+<!-- <script>
+    // Script para manejar el toggle del sidebar en dispositivos móviles
+    document.querySelector('.sidebar-toggle').addEventListener('click', function() {
+        document.querySelector('.sidebar').classList.toggle('active');
+        document.querySelector('.content').classList.toggle('active');
+    });
+</script> -->
