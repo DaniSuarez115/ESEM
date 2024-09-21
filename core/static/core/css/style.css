@@ -169,6 +169,66 @@ body {
   .card-container .card {
     width: 18rem;
   }
+
+  .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px; /* Altura de la barra de navegación */
+    padding: 0 20px;
+    background-color: #f8f9fa; /* Color de fondo opcional */
+    border-bottom: 1px solid #ddd; /* Línea divisoria opcional */
+}
+
+.header-content {
+    font-size: 1.5em; /* Ajusta el tamaño del texto */
+}
+
+.logo-circle {
+  width: 80px; /* Tamaño del logo */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  box-shadow: none; /* Sin sombra */
+  opacity: 0.7; /* Añade opacidad si quieres hacer el logo más transparente */
+}
+
+.logo-container {
+  background-color: transparent; /* Asegúrate de que el contenedor también sea transparente */
+}
+
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px; /* Ajusta la altura de la barra */
+  padding: 0 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+  font-size: 1.5em;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+}
+
+.logo-circle {
+  width: 80px; /* Aumenta el tamaño del logo */
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000; /* Borde opcional */
+}
+
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
     .sidebar {

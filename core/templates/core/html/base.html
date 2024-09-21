@@ -22,6 +22,7 @@
 
         {% include "core/html/menu/sidebar.html" %}
         <div class="main-content">
+            {% block h1 %}{% endblock %}
             {% block content %}{% endblock %}
         </div>
         
