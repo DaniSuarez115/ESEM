@@ -7,37 +7,37 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="{% url 'home' %}" class="nav-link active">
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %} active {% endif %} ">
                     Home
                 </a>
             </li>
             <li>
-                <a href="{% url 'usuarios' %}"class="nav-link">
+                <a href="{% url 'usuarios' %}"class="nav-link {% if request.path == '/usuarios/' %} active {% endif %}">
                    Usuarios
                 </a>
             </li>
             <li>
-                <a href="{% url 'home' %}" class="nav-link">
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/social/' %} active {% endif %}">
                   Social
                 </a>
             </li>
             <li>
-                <a href="{% url 'home' %}" class="nav-link">
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/eventos/' %} active {% endif %}">
                    Eventos
                 </a>
             </li>
             <li>
-                <a href="{% url 'home' %}" class="nav-link">
+                <a href="{% url 'home' %}" class="nav-link  {% if request.path == '/notificaciones/' %} active {% endif %}">
                    Notificaciones
                 </a>
             </li>
             <li></li>
-                <a href="{% url 'home' %}" class="nav-link">
+                <a href="{% url 'home' %}" class="nav-link  {% if request.path == '/reconocimientos/' %} active {% endif %}">
                    Reconocimientos
                 </a>
             </li>
             <li></li>
-                <a href="{% url 'configuraciones' %}" class="nav-link">
+                <a href="{% url 'configuraciones' %}" class="nav-link  {% if request.path == '/configuraciones/' %} active {% endif %}">
                    Configuraciones
                 </a>
             </li>
