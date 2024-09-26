@@ -6,6 +6,12 @@ from .models import Usuarios
 def login(request):
     return render(request, 'core/html/login.html')
 
+def userRegister(request):
+    return render(request, 'core/html/usuarios/usuariosRegister.html')
+
+def userRecover(request):
+    return render(request, 'core/html/usuarios/usuariosRecover.html')
+
 def usuarios(request):
     users = Usuarios.objects.all()
     paginator = Paginator(users, 10)  

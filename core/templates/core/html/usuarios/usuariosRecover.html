@@ -1,0 +1,25 @@
+{% extends "core/html/data.html" %}
+{% block h1 %}{% endblock %}
+
+{% block content %}
+<div class="password-recovery-container">
+    <h2 class="text-center mb-4">Recuperar Contraseña</h2>
+    <p class="text-center text-muted mb-4">Ingrese su correo electrónico y le enviaremos las instrucciones para restablecer su contraseña.</p>
+    
+    <form>
+        <!-- Email -->
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+            <label for="email">Correo Electrónico</label>
+        </div>
+
+        <!-- Botón de Enviar -->
+        <button type="submit" class="submit-btn btn btn-primary btn-block mb-3">Enviar Instrucciones</button>
+    </form>
+
+    <div class="text-center mt-3">
+        <p class="text-muted">¿Ya tienes una cuenta? <a href="{% url 'login' %}">Inicia sesión</a></p>
+        <p class="text-muted">¿No tienes cuenta? <a href="{% url 'register' %}">Regístrate</a></p>
+    </div>
+</div>
+{% endblock %}
