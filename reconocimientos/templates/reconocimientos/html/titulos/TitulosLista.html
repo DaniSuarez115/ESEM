@@ -6,7 +6,7 @@
     <!-- Botón para agregar nuevo usuario -->
     <div class="d-flex justify-content-end mb-3">
         <a href="#" class="btn border btn-info" id="btnAddUser">
-            <i class="fas fa-plus"></i> Agregar Medalla
+            <i class="fas fa-plus"></i> Agregar Título
         </a>
     </div>
 
@@ -17,19 +17,19 @@
                     <th>Id</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
-                    <th>Puntos por Nivel</th>
-                    <th>Nivel Maximo</th>
+                    <th>¿Es positivo?</th>
+                    <th>¿Es exclusivo?</th>
                     <th>Acciones</th>
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                {% for Medalla in page_obj %}
+                {% for Titulo in page_obj %}
                 <tr class="table-secondary text-center">
-                    <td scope="row">{{ Medalla.auto_increment_id }}</td>
-                    <td>{{ Medalla.nombre_medalla }}</td>
-                    <td>{{ Medalla.desc_medalla }}</td>
-                    <td>{{ Medalla.puntos_por_nivel }}</td>
-                    <td>{{ Medalla.nivel_maximo }}</td>
+                    <td scope="row">{{ Titulo.auto_increment_id }}</td>
+                    <td>{{ Titulo.nombre_titulo }}</td>
+                    <td>{{ Titulo.desc_titulo }}</td>
+                    <td>{{ Titulo.es_positivo }}</td>
+                    <td>{{ Titulo.es_exclusivo }}</td>
                     <td>
                         <a name="eliminar" id="eliminar" class="btn btn-danger" href="#" role="button">Eliminar</a>
                         ||
@@ -38,7 +38,7 @@
                 </tr>
                 {% empty %}
                 <tr>
-                    <td colspan="6">No hay medallas creadas.</td>
+                    <td colspan="6">No hay titulos creados.</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -86,6 +86,6 @@
         </ul>
     </nav>
 </div>
-{% include "reconocimientos/html/medallas/MedallasFrm.html" %}
+{% include "reconocimientos/html/titulos/TitulosFrm.html" %}
 
 {% endblock %}

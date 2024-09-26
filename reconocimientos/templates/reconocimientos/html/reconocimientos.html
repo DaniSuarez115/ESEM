@@ -1,0 +1,41 @@
+{% extends "core/html/base.html" %} 
+{% block content %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimientos</title>
+    <style>
+        .custom-button {
+            padding: 10px 20px;
+            border: 2px solid black;
+            background-color: #f2f2f2;
+            color: black;
+            font-size: 16px;
+            border-radius: 30px; /* Borde redondeado */
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .custom-button:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <button class="custom-button">Medallas</button>
+        <button class="custom-button">Títulos</button>
+    </div>
+
+</body>
+</html>
+
+{% endblock %}

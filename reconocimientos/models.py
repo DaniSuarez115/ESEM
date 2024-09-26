@@ -26,6 +26,7 @@ class Titulos(models.Model):
     desc_titulo = models.CharField(max_length=250, verbose_name="Descripción")
     image_titulo = models.ImageField(verbose_name="Logo",null=True,)
     es_positivo = models.BooleanField(default=True, verbose_name="¿Es positivo?")
+    es_exclusivo = models.BooleanField(default=True, verbose_name="¿Es exclusivo?")
     created = models.DateTimeField(auto_now_add=True, blank=True)
     updated = models.DateTimeField(auto_now_add=True, blank=True)
 
