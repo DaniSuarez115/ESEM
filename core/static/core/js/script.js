@@ -3,6 +3,13 @@ $(document).ready(function() {
         e.preventDefault(); 
         $("#addUserModal").modal('show');
     });
+
+    $("#btnPublicaciones").click(function(e) {
+       window.location.href= "/publicaciones";
+    });
+
+
+
     $(".close").click(function(){
         $("#addUserModal").modal('hide');
     })

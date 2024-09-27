@@ -1,12 +1,26 @@
-{% extends "core/html/base.html" %} 
+{% extends "core/html/base.html" %}
 {% block content %}
 <div class="circle-menu-container">
     <div class="circle-menu">
-        <div class="section red"></div>
-        <div class="section blue"></div>
-        <div class="section yellow"></div>
-        <div class="section green"></div>
+
+
+        <div title="Mensajes" class="section red d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-envelope" style="font-size: 90px; color: white;"></i>
+        </div>    
+        
+        
+
+        <div title="Publicaciones" class="section blue d-flex justify-content-center align-items-center"  id="btnPublicaciones">
+            <i class="fa-solid fa-signs-post"  style="font-size: 90px; color: white;"></i>
+        </div>
+
+        <div title="Acotecimientos" class="section yellow d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-calendar-plus" style="font-size: 90px; color: white;"></i>
+        </div>
+
+        <div title="Actualizaciones" class="section green d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-toilet-paper" style="font-size: 90px; color: white;"></i>
+        </div>
     </div>
 </div>
-
 {% endblock %}
