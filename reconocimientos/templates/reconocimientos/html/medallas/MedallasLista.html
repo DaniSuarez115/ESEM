@@ -23,13 +23,13 @@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
-                {% for Medalla in page_obj %}
+                {% for medalla in page_obj %}
                 <tr class="table-secondary text-center">
-                    <td scope="row">{{ Medalla.auto_increment_id }}</td>
-                    <td>{{ Medalla.nombre_medalla }}</td>
-                    <td>{{ Medalla.desc_medalla }}</td>
-                    <td>{{ Medalla.puntos_por_nivel }}</td>
-                    <td>{{ Medalla.nivel_maximo }}</td>
+                    <td scope="row">{{ medalla.auto_increment_id }}</td>
+                    <td>{{ medalla.nombre_medalla }}</td>
+                    <td>{{ medalla.desc_medalla }}</td>
+                    <td>{{ medalla.puntos_por_nivel }}</td>
+                    <td>{{ medalla.nivel_maximo }}</td>
                     <td>
                         <a name="eliminar" id="eliminar" class="btn btn-danger" href="#" role="button">Eliminar</a>
                         ||

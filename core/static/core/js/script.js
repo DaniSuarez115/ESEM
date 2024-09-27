@@ -6,6 +6,15 @@ $(document).ready(function() {
     $(".close").click(function(){
         $("#addUserModal").modal('hide');
     })
+
+    $("#medallas").click(function(){
+       window.location.href= '/medallas';
+    })
+
+    $("#titulos").click(function(){
+        window.location.href= '/titulos';
+     })
+
     $("#addUserForm").submit(function(e) {
         e.preventDefault();
         const nombre = $("#nombre").val();
