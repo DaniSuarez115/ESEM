@@ -4,6 +4,7 @@ from social import views as social_views
 urlpatterns = [
      path('publicaciones/', include('social.urls')),
      path('socialMenu/',social_views.socialMenu, name="socialMenu"),
+     path('reconocimientos/',social_views.socialMenu, name="reconocimientos"),
 
 
      
