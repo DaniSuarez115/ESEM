@@ -411,6 +411,81 @@ a:hover {
 
 
 
+.circle-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ajusta según el tamaño de la pantalla */
+}
+
+.circle-menu {
+  position: relative;
+  width: 400px; /* Ajusta el tamaño del menú según sea necesario */
+  height: 400px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.section i {
+  font-size: 2rem; /* Ajuste según el ícono */
+}
+
+.section.center {
+  background-color: orange;
+  width: 150px; /* Tamaño del botón central */
+  height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Asegura que esté centrado */
+}
+
+.section.red {
+  background-color: red;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section.blue {
+  background-color: blue;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section.yellow {
+  background-color: yellow;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section.green {
+  background-color: green;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilos adicionales */
+.section:hover {
+  transform: scale(1.1); /* Agranda el botón cuando se pasa el ratón */
+}
+
 
 
 
