@@ -1,40 +1,40 @@
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;  /* Altura mínima del viewport */
-    height: 100%;
-    margin: 0;  /* Elimina cualquier espacio adicional alrededor */
-    font-family: 'Times New Roman', Times, serif;
-    background:linear-gradient(
-        45deg,
-        hsl(208deg 49% 36%) 0%,
-        hsl(211deg 38% 41%) 11%,
-        hsl(214deg 30% 47%) 22%,
-        hsl(216deg 27% 52%) 33%,
-        hsl(218deg 27% 57%) 44%,
-        hsl(221deg 28% 62%) 56%,
-        hsl(223deg 29% 67%) 67%,
-        hsl(226deg 30% 72%) 78%,
-        hsl(228deg 33% 77%) 89%,
-        hsl(231deg 36% 82%) 100%
-      );
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* Altura mínima del viewport */
+  height: 100%;
+  margin: 0;  /* Elimina cualquier espacio adicional alrededor */
+  font-family: 'Times New Roman', Times, serif;
+  background:linear-gradient(
+      45deg,
+      hsl(208deg 49% 36%) 0%,
+      hsl(211deg 38% 41%) 11%,
+      hsl(214deg 30% 47%) 22%,
+      hsl(216deg 27% 52%) 33%,
+      hsl(218deg 27% 57%) 44%,
+      hsl(221deg 28% 62%) 56%,
+      hsl(223deg 29% 67%) 67%,
+      hsl(226deg 30% 72%) 78%,
+      hsl(228deg 33% 77%) 89%,
+      hsl(231deg 36% 82%) 100%
+    );
 }
 
 /* Estilo que se encarga de los botones info de bootstrap */
 .btn-info{
-    background:linear-gradient(
-        45deg,
-        hsl(208deg 49% 36%) 0%,
-        hsl(211deg 38% 41%) 11%,
-        hsl(214deg 30% 47%) 22%,
-        hsl(216deg 27% 52%) 33%,
-        hsl(218deg 27% 57%) 44%,
-        hsl(221deg 28% 62%) 56%,
-        hsl(223deg 29% 67%) 67%,
-        hsl(226deg 30% 72%) 78%,
-        hsl(228deg 33% 77%) 89%,
-        hsl(231deg 36% 82%) 100%
-      );
+  background:linear-gradient(
+      45deg,
+      hsl(208deg 49% 36%) 0%,
+      hsl(211deg 38% 41%) 11%,
+      hsl(214deg 30% 47%) 22%,
+      hsl(216deg 27% 52%) 33%,
+      hsl(218deg 27% 57%) 44%,
+      hsl(221deg 28% 62%) 56%,
+      hsl(223deg 29% 67%) 67%,
+      hsl(226deg 30% 72%) 78%,
+      hsl(228deg 33% 77%) 89%,
+      hsl(231deg 36% 82%) 100%
+    );
 }
 
 /* Fin Estilo que se encarga de los botones info de bootstrap */
@@ -43,19 +43,19 @@ body {
 
 /* Estilo que se encarga de los botones info de bootstrap */
 .border{
-    background:linear-gradient(
-        45deg,
-        hsl(208deg 49% 36%) 0%,
-        hsl(211deg 38% 41%) 11%,
-        hsl(214deg 30% 47%) 22%,
-        hsl(216deg 27% 52%) 33%,
-        hsl(218deg 27% 57%) 44%,
-        hsl(221deg 28% 62%) 56%,
-        hsl(223deg 29% 67%) 67%,
-        hsl(226deg 30% 72%) 78%,
-        hsl(228deg 33% 77%) 89%,
-        hsl(231deg 36% 82%) 100%
-      );
+  background:linear-gradient(
+      45deg,
+      hsl(208deg 49% 36%) 0%,
+      hsl(211deg 38% 41%) 11%,
+      hsl(214deg 30% 47%) 22%,
+      hsl(216deg 27% 52%) 33%,
+      hsl(218deg 27% 57%) 44%,
+      hsl(221deg 28% 62%) 56%,
+      hsl(223deg 29% 67%) 67%,
+      hsl(226deg 30% 72%) 78%,
+      hsl(228deg 33% 77%) 89%,
+      hsl(231deg 36% 82%) 100%
+    );
 }
 /* Fin Estilo que se encarga de los botones info de bootstrap */
 
@@ -71,35 +71,35 @@ overflow: hidden; /
 
 /* Estilo para el sidebar */
 .sidebar {
-    height: 100vh;
-    background-color: #343a40;
-    padding-top: 20px;
-    color: #ffffff;
-    transition: all 0.3s ease;
-    width: 250px; /* Ancho fijo del sidebar */
-    position: fixed; /* Fija el sidebar */
-    left: 0; /* Asegura que esté en la esquina izquierda */
-    top: 0; /* Desde el inicio de la pantalla */
-    z-index: 1000; /* Asegura que esté encima del contenido */
+  height: 100vh;
+  background-color: #343a40;
+  padding-top: 20px;
+  color: #ffffff;
+  transition: all 0.3s ease;
+  width: 250px; /* Ancho fijo del sidebar */
+  position: fixed; /* Fija el sidebar */
+  left: 0; /* Asegura que esté en la esquina izquierda */
+  top: 0; /* Desde el inicio de la pantalla */
+  z-index: 1000; /* Asegura que esté encima del contenido */
 }
 
 .sidebar .nav-link {
-    color: #ffffff;
-    font-size: 18px;
-    margin-bottom: 15px;
-    padding: 10px 20px; /* Mejor padding para el contenido */
-    display: block; /* Asegura que el link ocupe toda la fila */
-    transition: all 0.3s ease;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 15px;
+  padding: 10px 20px; /* Mejor padding para el contenido */
+  display: block; /* Asegura que el link ocupe toda la fila */
+  transition: all 0.3s ease;
 }
 
 .sidebar .nav-link:hover {
-    background-color: #495057;
-    border-radius: 5px;
+  background-color: #495057;
+  border-radius: 5px;
 }
 
 .sidebar .active {
-    background-color: #495057;
-    border-radius: 5px;
+  background-color: #495057;
+  border-radius: 5px;
 }
 /*Fin Estilo para el sidebar */
 
@@ -107,304 +107,304 @@ overflow: hidden; /
 
 /* Contenido principal */
 .main-content {
-    margin-left: 250px; /* Igual que el ancho del sidebar */
-    padding: 20px;
-    transition: all 0.3s ease;
+  margin-left: 250px; /* Igual que el ancho del sidebar */
+  padding: 20px;
+  transition: all 0.3s ease;
 }
 /* Fin Contenido principal */
 
 /* 
 Estilos del footer */
 .footer {
-  width: 100%;
-  background-color: #343a40;  /* Color de fondo */
-  color: #ffffff;  /* Color de texto */
-  padding: 45px ;
-  text-align: center;
-  position: relative; /* Evita que el footer se salga del flujo del documento */
-  bottom: 0;
+width: 100%;
+background-color: #343a40;  /* Color de fondo */
+color: #ffffff;  /* Color de texto */
+padding: 45px ;
+text-align: center;
+position: relative; /* Evita que el footer se salga del flujo del documento */
+bottom: 0;
 
 }
 .footer .social-icons a {
-    margin-right: 1rem;
-    color: #6c757d;
-    text-decoration: none;
+  margin-right: 1rem;
+  color: #6c757d;
+  text-decoration: none;
 }
 .footer .social-icons a:hover {
-    color: #343a40;
+  color: #343a40;
 }
 .card {
-    cursor: grab;
-    margin-bottom: 15px;
-    
-  }
-  .dragging {
-    opacity: 0.5;
-  }
-  .container {
-    flex-grow: 1;  /* Ocupa el espacio restante para empujar el footer */
-    overflow: auto; /* Permitir scroll solo en el contenedor principal si es necesario */
-  }
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-  .card-container .card {
-    width: 18rem;
-  }
-
-  .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px; /* Altura de la barra de navegación */
-    padding: 0 20px;
-    background-color: #f8f9fa; /* Color de fondo opcional */
-    border-bottom: 1px solid #ddd; /* Línea divisoria opcional */
+  cursor: grab;
+  margin-bottom: 15px;
+  
 }
-
-.header-content {
-    font-size: 1.5em; /* Ajusta el tamaño del texto */
+.dragging {
+  opacity: 0.5;
 }
-
-.logo-circle {
-  width: 80px; /* Tamaño del logo */
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  background-color: transparent; /* Fondo transparente */
-  border: none; /* Sin borde */
-  box-shadow: none; /* Sin sombra */
-  opacity: 0.7; /* Añade opacidad si quieres hacer el logo más transparente */
+.container {
+  flex-grow: 1;  /* Ocupa el espacio restante para empujar el footer */
+  overflow: auto; /* Permitir scroll solo en el contenedor principal si es necesario */
 }
-
-.logo-container {
-  background-color: transparent; /* Asegúrate de que el contenedor también sea transparente */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
-
+.card-container .card {
+  width: 18rem;
+}
 
 .navbar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px; /* Ajusta la altura de la barra */
+  height: 60px; /* Altura de la barra de navegación */
   padding: 0 20px;
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
+  background-color: #f8f9fa; /* Color de fondo opcional */
+  border-bottom: 1px solid #ddd; /* Línea divisoria opcional */
 }
 
 .header-content {
-  font-size: 1.5em;
-}
-
-.logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  float: right;
+  font-size: 1.5em; /* Ajusta el tamaño del texto */
 }
 
 .logo-circle {
-  width: 80px; /* Aumenta el tamaño del logo */
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #000; /* Borde opcional */
+width: 80px; /* Tamaño del logo */
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+background-color: transparent; /* Fondo transparente */
+border: none; /* Sin borde */
+box-shadow: none; /* Sin sombra */
+opacity: 0.7; /* Añade opacidad si quieres hacer el logo más transparente */
+}
+
+.logo-container {
+background-color: transparent; /* Asegúrate de que el contenedor también sea transparente */
+}
+
+
+.navbar-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 80px; /* Ajusta la altura de la barra */
+padding: 0 20px;
+background-color: #f8f9fa;
+border-bottom: 1px solid #ddd;
+}
+
+.header-content {
+font-size: 1.5em;
+}
+
+.logo-container {
+display: flex;
+justify-content: center;
+align-items: center;
+float: right;
+}
+
+.logo-circle {
+width: 80px; /* Aumenta el tamaño del logo */
+height: 80px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #000; /* Borde opcional */
 }
 
 .register-container {
-  max-width: 500px;
-  margin: 50px auto;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 500px;
+margin: 50px auto;
+background-color: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .register-title {
-  text-align: center;
-  margin-bottom: 20px;
+text-align: center;
+margin-bottom: 20px;
 }
 .form-control:focus {
-  box-shadow: none;
+box-shadow: none;
 }
 .form-group {
-  position: relative;
+position: relative;
 }
 .input-group-text {
-  background-color: #e9ecef;
+background-color: #e9ecef;
 }
 .submit-btn {
-  width: 100%;
-  background-color: #007bff;
-  border: none;
-  padding: 10px;
-  font-size: 16px;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+width: 100%;
+background-color: #007bff;
+border: none;
+padding: 10px;
+font-size: 16px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
 }
 .submit-btn:hover {
-  background-color: #0056b3;
+background-color: #0056b3;
 }
 .text-muted {
-  text-align: center;
-  margin-top: 10px;
+text-align: center;
+margin-top: 10px;
 }
 .password-recovery-container {
-  max-width: 450px;
-  margin: 100px auto;
-  background-color: #ffffff;
-  padding: 40px;
-  border-radius: 15px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease-in-out;
+max-width: 450px;
+margin: 100px auto;
+background-color: #ffffff;
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+transition: box-shadow 0.3s ease-in-out;
 }
 
 .password-recovery-container:hover {
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .form-floating label {
-  font-size: 14px;
-  color: #6c757d;
+font-size: 14px;
+color: #6c757d;
 }
 
 .form-control {
-  height: 50px;
-  border-radius: 10px;
-  font-size: 16px;
-  padding-left: 20px;
+height: 50px;
+border-radius: 10px;
+font-size: 16px;
+padding-left: 20px;
 }
 
 .form-control:focus {
-  border-color: #007bff;
-  box-shadow: none;
+border-color: #007bff;
+box-shadow: none;
 }
 
 .submit-btn {
-  width: 100%;
-  padding: 12px;
-  font-size: 16px;
-  border-radius: 10px;
-  background-color: #007bff;
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+width: 100%;
+padding: 12px;
+font-size: 16px;
+border-radius: 10px;
+background-color: #007bff;
+transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+background-color: #0056b3;
+box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
 }
 
 .text-muted {
-  font-size: 14px;
+font-size: 14px;
 }
 
 a {
-  color: #007bff;
-  text-decoration: none;
+color: #007bff;
+text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Estilos para el menú tipo Simon Says */
 .circle-menu {
-  position: relative;
-  width: 700px; /* Ajusta el tamaño del círculo */
-  height: 700px;
-  border-radius: 50%;
-  overflow: hidden;
-  transform: rotate(45deg); /* Rota el círculo */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border: 5px solid #000; 
- 
+position: relative;
+width: 700px; /* Ajusta el tamaño del círculo */
+height: 700px;
+border-radius: 50%;
+overflow: hidden;
+transform: rotate(45deg); /* Rota el círculo */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+border: 5px solid #000; 
+
 }
 
 /* Contenedor que centrará el círculo en la página */
 .circle-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /* Altura completa de la ventana */
-  width: 70vw;  /* Anchura completa de la ventana */
-  
+display: flex;
+justify-content: center;
+align-items: center;
+height: 80vh; /* Altura completa de la ventana */
+width: 70vw;  /* Anchura completa de la ventana */
+
 }
 
 /* Secciones del menú */
 .section {
-  position: absolute;
-  width: 40%; /* Ajusta el tamaño de las secciones */
-  height: 40%;
-  background-color: grey;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-  margin: 3%; /* Aumenta el margen para más separación entre las secciones */
+position: absolute;
+width: 40%; /* Ajusta el tamaño de las secciones */
+height: 40%;
+background-color: grey;
+cursor: pointer;
+transition: transform 0.2s ease;
+margin: 3%; /* Aumenta el margen para más separación entre las secciones */
 }
 
 .section:hover {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
 .red {
-  background-color: rgb(153, 25, 25);
-  top: 0;
-  left: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  border: 5px solid #000; 
-  border-radius: 30%;
-  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+background-color: rgb(153, 25, 25);
+top: 0;
+left: 0;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+border: 5px solid #000; 
+border-radius: 30%;
+box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .blue {
-  background-color: rgb(26, 26, 155);
-  top: 0;
-  right: 0;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 0%);
-  border-radius: 30%;
-  border: 5px solid #000; 
-  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+background-color: rgb(26, 26, 155);
+top: 0;
+right: 0;
+clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 0%);
+border-radius: 30%;
+border: 5px solid #000; 
+box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .yellow {
-  background-color: rgb(175, 175, 26);
-  bottom: 0;
-  right: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  border-radius: 30%;
-  border: 5px solid #000; 
-  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+background-color: rgb(175, 175, 26);
+bottom: 0;
+right: 0;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+border-radius: 30%;
+border: 5px solid #000; 
+box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 .green {
-  background-color: rgb(23, 139, 23);
-  bottom: 0;
-  left: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  border-radius: 30%;
-  border: 5px solid #000;
-  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+background-color: rgb(23, 139, 23);
+bottom: 0;
+left: 0;
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+border-radius: 30%;
+border: 5px solid #000;
+box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
 }
 
 /* Nueva sección central */
 .section.center {
-  position: absolute;
-  width: 25%; /* Ajusta el tamaño según sea necesario */
-  height: 25%;
-  top: 37.5%; /* Posición en el centro */
-  left: 37.5%; /* Posición en el centro */
-  background-color: #ff6600; /* Color de fondo */
-  border-radius: 50%;
-  border: 5px solid #000; 
-  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
-  z-index: 1; /* Asegúrate de que esté por encima de las otras secciones */
-  cursor: pointer;
-  transition: transform 0.2s ease;
+position: absolute;
+width: 25%; /* Ajusta el tamaño según sea necesario */
+height: 25%;
+top: 37.5%; /* Posición en el centro */
+left: 37.5%; /* Posición en el centro */
+background-color: #ff6600; /* Color de fondo */
+border-radius: 50%;
+border: 5px solid #000; 
+box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+z-index: 1; /* Asegúrate de que esté por encima de las otras secciones */
+cursor: pointer;
+transition: transform 0.2s ease;
 }
 
 .section.center:hover {
-  transform: scale(1.1);
+transform: scale(1.1);
 }
 
 
@@ -424,44 +424,45 @@ a:hover {
 
 /* Ajustes de estilos responsive */
 @media (max-width: 768px) {
-  .circle-menu {
-      width: 300px;
-      height: 300px;
-  }
+.circle-menu {
+    width: 300px;
+    height: 300px;
+}
 
-  .section {
-      margin: 2%;
-  }
+.section {
+    margin: 2%;
+}
 }
 
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%; /* Sidebar ocupa todo el ancho */
-        height: auto;
-        position: relative; /* Se vuelve estático en pantallas pequeñas */
-    }
+  .sidebar {
+      width: 100%; /* Sidebar ocupa todo el ancho */
+      height: auto;
+      position: relative; /* Se vuelve estático en pantallas pequeñas */
+  }
 
-    .sidebar .nav-link {
-        text-align: center; /* Alineación centrada en pantallas pequeñas */
-    }
+  .sidebar .nav-link {
+      text-align: center; /* Alineación centrada en pantallas pequeñas */
+  }
 
-    .main-content {
-        margin-left: 0; /* Quita el margen del contenido */
-        padding-top: 10px; /* Añade un margen superior */
-        text-align: center; /* Centra el contenido */
-    }
+  .main-content {
+      margin-left: 0; /* Quita el margen del contenido */
+      padding-top: 10px; /* Añade un margen superior */
+      text-align: center; /* Centra el contenido */
+  }
 
-    .sidebar-toggle {
-        display: block; /* Muestra el botón de toggle */
-        margin-bottom: 20px;
-        cursor: pointer;
-    }
+  .sidebar-toggle {
+      display: block; /* Muestra el botón de toggle */
+      margin-bottom: 20px;
+      cursor: pointer;
+  }
 
-    .title {
-        text-align: center; /* Centra el título horizontalmente */
-        margin-top: 20px; /* Añade un margen superior */
-        margin-bottom: 20px; /* Añade un margen inferior */
-        font-size: 24px; /* Tamaño de fuente ajustado para pantallas pequeñas */
-    }
+  .title {
+      text-align: center; /* Centra el título horizontalmente */
+      margin-top: 20px; /* Añade un margen superior */
+      margin-bottom: 20px; /* Añade un margen inferior */
+      font-size: 24px; /* Tamaño de fuente ajustado para pantallas pequeñas */
+  }
 }
+

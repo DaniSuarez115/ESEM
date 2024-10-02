@@ -15,11 +15,11 @@ $(document).ready(function() {
     })
 
     $("#medallas").click(function(){
-       window.location.href= '/medallas';
+       window.location.href= '/reconocimientos/medallas';
     })
 
     $("#titulos").click(function(){
-        window.location.href= '/titulos';
+        window.location.href= '/reconocimientos/titulos';
      })
 
     $("#addUserForm").submit(function(e) {
