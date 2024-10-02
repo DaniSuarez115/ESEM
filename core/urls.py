@@ -1,8 +1,10 @@
 from django.urls import path, include
 from . import views
 from social import views as social_views
+
 urlpatterns = [
      path('publicaciones/', include('social.urls')),
+     path('reconocimientos/', include('reconocimientos.urls')),
      path('socialMenu/',social_views.socialMenu, name="socialMenu"),
 
 
