@@ -1,0 +1,28 @@
+{% extends "core/html/base.html" %}
+{% block content %}
+<div class="circle-menu-container">
+    <div class="circle-menu">
+        <!-- Opción Central -->
+        <div title="Centro" class="section center d-flex justify-content-center align-items-center ">
+            <i class="fa-solid fa-star" style="font-size: 70px; color: white;"></i>
+        </div>
+
+        <!-- Otras opciones existentes -->
+        <div title="Mensajes" class="section red d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-envelope" style="font-size: 90px; color: white;"></i>
+        </div>    
+
+        <div title="Publicaciones" class="section blue d-flex justify-content-center align-items-center" id="btnPublicaciones">
+            <i class="fa-solid fa-signs-post" style="font-size: 90px; color: white;"></i>
+        </div>
+
+        <div title="Acontecimientos" class="section yellow d-flex justify-content-center align-items-center">
+            <i class="fa-regular fa-calendar-plus" style="font-size: 90px; color: white;"></i>
+        </div>
+
+        <div title="Actualizaciones" class="section green d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-toilet-paper" style="font-size: 90px; color: white;"></i>
+        </div>
+    </div>
+</div>
+{% endblock %}

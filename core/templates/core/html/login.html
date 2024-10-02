@@ -17,12 +17,12 @@
                     <input class="form-check-input" type="checkbox" id="rememberMe">
                     <label class="form-check-label" for="rememberMe">Recuérdame</label>
                 </div>
-                <a href="#" class="link-primary">¿Olvidaste tu contraseña?</a>
+                <a href="{% url 'recover' %}" class="link-primary">¿Olvidaste tu contraseña?</a>
             </div>
             <button type="submit" class="btn border btn-info w-100">Iniciar Sesión</button>
         </form>
         <div class="text-center mt-3">
-            <span>¿No tienes cuenta? <a href="#" class="link-primary">Regístrate</a></span>
+            <span>¿No tienes cuenta? <a href="{% url 'register' %}" class="link-primary btnRegister">Regístrate</a></span>
         </div>
     </div>
 </div>

@@ -7,43 +7,52 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
             <li class="nav-item">
-                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %} active {% endif %} ">
+                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %} active {% endif %}">
                     Home
+                    <i class="fas fa-home" style="margin-left: 100px;"></i> <!-- Ajusta el valor de margin-left según lo que necesites -->
                 </a>
             </li>
+            
+            
             <li>
                 <a href="{% url 'usuarios' %}"class="nav-link {% if request.path == '/usuarios/' %} active {% endif %}">
                    Usuarios
+                   <i class="fa-solid fa-circle-user" style="margin-left: 80px;"></i>
                 </a>
             </li>
             <li>
-                <a href="{% url 'home' %}" class="nav-link {% if request.path == '/social/' %} active {% endif %}">
+                <a href="{% url 'socialMenu' %}" class="nav-link {% if request.path == '/socialMenu/' or request.path == '/publicaciones/' %} active {% endif %}">
                   Social
+                  <i class="fa-solid fa-meteor" style="margin-left: 100px;"></i>
                 </a>
             </li>
             <li>
                 <a href="{% url 'home' %}" class="nav-link {% if request.path == '/eventos/' %} active {% endif %}">
                    Eventos
+                   <ion-icon name="planet" style="margin-left: 88px;"></ion-icon>
                 </a>
             </li>
             <li>
                 <a href="{% url 'home' %}" class="nav-link  {% if request.path == '/notificaciones/' %} active {% endif %}">
                    Notificaciones
+                   <ion-icon name="alert-circle" style="margin-left: 40px;"></ion-icon>
                 </a>
             </li>
             <li></li>
                 <a href="{% url 'reconocimientos' %}" class="nav-link  {% if request.path == '/reconocimientos/' %} active {% endif %}">
                    Reconocimientos
+                   <ion-icon name="trophy" style="margin-left: 20px;"></ion-icon>
                 </a>
             </li>
             <li></li>
                 <a href="{% url 'configuraciones' %}" class="nav-link  {% if request.path == '/configuraciones/' %} active {% endif %}">
                    Configuraciones
+                   <i class="fa-solid fa-gears"  style="margin-left: 25px;"></i>
                 </a>
             </li>
              <li></li>
                 <a href="{% url 'home' %}" class="nav-link">
-                   Cerrar Session
+                   Cerrar Session <i class="fa-solid fa-right-from-bracket"  style="margin-left: 40px;" ></i>
                 </a>
             </li>
         </ul>

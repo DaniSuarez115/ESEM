@@ -1,16 +1,16 @@
 from django.urls import path, include
 from . import views
-from reconocimientos import views as rec_views
-
+from social import views as social_views
 urlpatterns = [
-     path('reconocimientos/',include ('reconocimientos.urls')),
+     path('publicaciones/', include('social.urls')),
+     path('socialMenu/',social_views.socialMenu, name="socialMenu"),
+
+
      
      path('',views.home, name="home"),
      path('login/',views.login, name="login"),
      path('configuraciones/',views.configuraciones, name="configuraciones"),
      path('usuarios/',views.usuarios, name="usuarios"),
-     path('medallas/',rec_views.medallas, name="medallas"),
-     path('titulos/',rec_views.titulos, name="titulos"),
-     path('reconocimientos/',rec_views.reconocimientos, name="reconocimientos")
-     
+     path('register/',views.userRegister, name="register"),
+     path('recover/',views.userRecover, name="recover"),
 ]

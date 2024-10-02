@@ -1,43 +1,9 @@
-
-.carousel-item {
-    height: 100vh; /* Ocupa todo el alto de la ventana */
-  }
-  .carousel-item img {
-    max-height: 70vh;
-    object-fit: cover;
-  }
-  .project-description {
-    margin-top: 20px;
-  }
-.containerSubtitle{
-    text-align: center; 
-    font-size: x-large;
-}
-.grid{
-    display: grid;
-      grid-template-areas: 
-        "sliderContainer topContainer topContainer"
-        "sliderContainer mainContent mainContent"
-        "sliderContainer mainContent mainContent";
-      grid-template-columns: 1fr 2fr; /* Define 2 columnas, la primera es más pequeña */
-      grid-template-rows: auto; /* Las filas se ajustarán automáticamente */
-      gap: 10px; /* Espacio entre los elementos */
-}
-
-.topContainer {
-    grid-area: topContainer;
-  }
-
-.mainContent {
-    grid-area: mainContent;
-  }
-
-.sliderContainer {
-    grid-area: sliderContainer; 
-   
-  }  
-
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Altura mínima del viewport */
+    height: 100%;
+    margin: 0;  /* Elimina cualquier espacio adicional alrededor */
     font-family: 'Times New Roman', Times, serif;
     background:linear-gradient(
         45deg,
@@ -53,6 +19,8 @@ body {
         hsl(231deg 36% 82%) 100%
       );
 }
+
+/* Estilo que se encarga de los botones info de bootstrap */
 .btn-info{
     background:linear-gradient(
         45deg,
@@ -68,6 +36,12 @@ body {
         hsl(231deg 36% 82%) 100%
       );
 }
+
+/* Fin Estilo que se encarga de los botones info de bootstrap */
+
+
+
+/* Estilo que se encarga de los botones info de bootstrap */
 .border{
     background:linear-gradient(
         45deg,
@@ -83,25 +57,19 @@ body {
         hsl(231deg 36% 82%) 100%
       );
 }
+/* Fin Estilo que se encarga de los botones info de bootstrap */
 
-/* Estilos personalizados para el sidebar */
-.container-fluid {
-    background: linear-gradient(to bottom, #343a40, #495057, #6c757d, #adb5bd); /* Degradado de oscuro a claro */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
-    padding: 5px;
-    border-radius: 7px
+
+
+/* Estilo que quita el Scrollbar de la pantalla */
+html,body {
+height: 100%;
+margin: 0;
+overflow: hidden; /
 }
+/*Fin Estilo que quita el Scrollbar de la pantalla */
 
-.title {
-    background: linear-gradient(to bottom, #343a40, #495057, #6c757d, #adb5bd);
-    color: #FFF;
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 6px 0; /* Agrega un poco de padding para darle espacio vertical */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
-    border-radius: 4px
-}
-
-
+/* Estilo para el sidebar */
 .sidebar {
     height: 100vh;
     background-color: #343a40;
@@ -133,6 +101,9 @@ body {
     background-color: #495057;
     border-radius: 5px;
 }
+/*Fin Estilo para el sidebar */
+
+
 
 /* Contenido principal */
 .main-content {
@@ -140,10 +111,19 @@ body {
     padding: 20px;
     transition: all 0.3s ease;
 }
+/* Fin Contenido principal */
 
+/* 
+Estilos del footer */
 .footer {
-    background-color: #495057;
-    padding: 2rem 0;
+  width: 100%;
+  background-color: #343a40;  /* Color de fondo */
+  color: #ffffff;  /* Color de texto */
+  padding: 45px ;
+  text-align: center;
+  position: relative; /* Evita que el footer se salga del flujo del documento */
+  bottom: 0;
+
 }
 .footer .social-icons a {
     margin-right: 1rem;
@@ -160,6 +140,10 @@ body {
   }
   .dragging {
     opacity: 0.5;
+  }
+  .container {
+    flex-grow: 1;  /* Ocupa el espacio restante para empujar el footer */
+    overflow: auto; /* Permitir scroll solo en el contenedor principal si es necesario */
   }
   .card-container {
     display: flex;
@@ -229,6 +213,227 @@ body {
   border: 2px solid #000; /* Borde opcional */
 }
 
+.register-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.register-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+.form-group {
+  position: relative;
+}
+.input-group-text {
+  background-color: #e9ecef;
+}
+.submit-btn {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+.text-muted {
+  text-align: center;
+  margin-top: 10px;
+}
+.password-recovery-container {
+  max-width: 450px;
+  margin: 100px auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.password-recovery-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-floating label {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.form-control {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: #007bff;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.2);
+}
+
+.text-muted {
+  font-size: 14px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el menú tipo Simon Says */
+.circle-menu {
+  position: relative;
+  width: 700px; /* Ajusta el tamaño del círculo */
+  height: 700px;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: rotate(45deg); /* Rota el círculo */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid #000; 
+ 
+}
+
+/* Contenedor que centrará el círculo en la página */
+.circle-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; /* Altura completa de la ventana */
+  width: 70vw;  /* Anchura completa de la ventana */
+  
+}
+
+/* Secciones del menú */
+.section {
+  position: absolute;
+  width: 40%; /* Ajusta el tamaño de las secciones */
+  height: 40%;
+  background-color: grey;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 3%; /* Aumenta el margen para más separación entre las secciones */
+}
+
+.section:hover {
+  transform: scale(1.1);
+}
+
+.red {
+  background-color: rgb(153, 25, 25);
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  border: 5px solid #000; 
+  border-radius: 30%;
+  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.blue {
+  background-color: rgb(26, 26, 155);
+  top: 0;
+  right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 0%);
+  border-radius: 30%;
+  border: 5px solid #000; 
+  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.yellow {
+  background-color: rgb(175, 175, 26);
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 30%;
+  border: 5px solid #000; 
+  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.green {
+  background-color: rgb(23, 139, 23);
+  bottom: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  border-radius: 30%;
+  border: 5px solid #000;
+  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Nueva sección central */
+.section.center {
+  position: absolute;
+  width: 25%; /* Ajusta el tamaño según sea necesario */
+  height: 25%;
+  top: 37.5%; /* Posición en el centro */
+  left: 37.5%; /* Posición en el centro */
+  background-color: #ff6600; /* Color de fondo */
+  border-radius: 50%;
+  border: 5px solid #000; 
+  box-shadow: inset 10px 20px 40px rgba(0, 0, 0, 0.6);
+  z-index: 1; /* Asegúrate de que esté por encima de las otras secciones */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.section.center:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ajustes de estilos responsive */
+@media (max-width: 768px) {
+  .circle-menu {
+      width: 300px;
+      height: 300px;
+  }
+
+  .section {
+      margin: 2%;
+  }
+}
+
 /* Estilos para pantallas más pequeñas */
 @media (max-width: 768px) {
     .sidebar {
@@ -260,39 +465,3 @@ body {
         font-size: 24px; /* Tamaño de fuente ajustado para pantallas pequeñas */
     }
 }
-
-
-
-
-
-
-
-
-.button-container {
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center;    /* Centra verticalmente */
-  height: 100vh;          /* Ocupa toda la altura de la pantalla */
-  gap: 30px;
-}
-
-.custom-button {
-  padding: 40px 20px;
-  border: 2px solid black;
-  background-color: #f2f2f2;
-  color: black;
-  font-size: 24px;
-  border-radius: 25%;
-  width: 300px;
-  height: 250px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  box-shadow: inset 0 0 0 5px #ccc; /* Segundo borde interior */
-}
-
-.custom-button:hover {
-  background-color: black;
-  color: white;
-  box-shadow: inset 0 0 0 5px white; /* Cambia el borde interior en hover */
-}
-

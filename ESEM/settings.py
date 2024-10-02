@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'core',
     'django_extensions',
     'reconocimientos',
+    'social'
 ]
 
 MIDDLEWARE = [
